@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>THESAXONY</title>
+    <title>THEXASONY</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -31,7 +31,7 @@
     <div class="container-fluid bg-white position-relative">
         <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0">
             <a href="index.html" class="navbar-brand text-secondary">
-                <h1 class="display-4 text-uppercase">THESAXONY</h1>
+                <h1 class="display-4 text-uppercase">THEXASONY</h1> 
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
@@ -46,7 +46,7 @@
                 <div class="d-none d-lg-flex align-items-center pl-4">
                     <div>
                        
-                        <button class="m-0 p-3 bg-primary text-white rounded border-0"><a href="contact.html" class="text-white">Free Consultation</a></button>
+                        <button class="m-0 p-3 bg-primary text-white rounded border-0"><a href="claim.html" class="text-white">Start Claim</a></button>
                     </div>
                 </div>
             </div>
@@ -69,38 +69,13 @@
 
     <!-- Contact Start -->
     <div class="container-fluid py-5 px-0">
-        <h1 class="display-4 text-uppercase text-center mt-5 mb-5">Contact Us</h1>
-        <div class="container-fluid py-5 px-0" style="margin-bottom: 0px;">
-            <div class="row mx-0 align-items-center">
-                <!-- Left Side: Original Write-up -->
-                <div class="col-lg-6 d-flex flex-column align-items-start text-left px-md-5">
-                    <h3 class="display-6 text-uppercase text-primary mb-4">
-                        Get in touch, let's work together
-                    </h3>
-                
-                    <div class="w-100">
-                        <div class="card bg-dark text-light p-3 mb-3 shadow-lg d-flex flex-row align-items-center">
-                            <i class="fas fa-phone-alt text-primary fs-3 me-3"></i>
-                            <span class="fw-bold fs-5">+123 456 7890</span>
-                        </div>
-                
-                        <div class="card bg-dark text-light p-3 mb-3 shadow-lg d-flex flex-row align-items-center">
-                            <i class="fas fa-map-marker-alt text-primary fs-3 me-3"></i>
-                            <span class="fw-bold fs-5">123 Main Street, City, Country</span>
-                        </div>
-                
-                        <div class="card bg-dark text-light p-3 shadow-lg d-flex flex-row align-items-center">
-                            <i class="fas fa-envelope text-primary fs-3  me-3"></i>
-                            <span class="fw-bold fs-5">info@example.com</span>
-                        </div>
-                    </div>
-                </div>
+       
                 
     
                 
         
                 <!-- Right Side: Form -->
-                <div class="col-lg-5 px-5" style="margin-top: 1px;">
+                <!-- <div class="col-lg-5 px-5" style="margin-top: 1px;">
                    
                     <div class="bg-white p-4 rounded shadow">
                         <form>
@@ -181,11 +156,14 @@
         
                             <button type="submit" class="btn btn-primary btn-block text-uppercase py-3">Get Consultation</button>
                         </form>
+                        <p id="responseMessage"></p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row mx-0">
+        </div> -->
+
+
+        <!-- <div class="row mx-0">
             <div class="col-12 px-0" style="height: 500px;">
                 <div class="position-relative h-100">
                     <iframe class="position-relative w-100 h-100"
@@ -194,10 +172,183 @@
                         tabindex="0"></iframe>
                 </div>
             </div>
-        </div>
+        </div> -->
        
-    </div>
+        
+    <!-- </div> -->
     <!-- Contact End -->
+
+    <style>
+        .contact-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .contact-info {
+            max-width: 45%;
+        }
+        .contact-form {
+            max-width: 50%;
+        }
+        @media (max-width: 768px) {
+            .contact-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .contact-info, .contact-form {
+                max-width: 100%;
+            }
+        }
+    </style>
+
+
+    <div class="container py-5">
+        <h1 class="display-4 text-uppercase text-center mb-5">Contact Us</h1>
+        <div class="contact-container">
+            <!-- Left Side: Get in Touch -->
+            <div class="contact-info">
+                <h3 class="text-uppercase text-primary mb-4">Get in touch, let's work together</h3>
+                <div class="card bg-dark text-light p-3 mb-3 shadow-lg d-flex flex-row align-items-center">
+                    <i class="fas fa-phone-alt text-primary fs-3 me-3"></i>
+                    <span class="fw-bold fs-5">+123 456 7890</span>
+                </div>
+                <div class="card bg-dark text-light p-3 mb-3 shadow-lg d-flex flex-row align-items-center">
+                    <i class="fas fa-map-marker-alt text-primary fs-3 me-3"></i>
+                    <span class="fw-bold fs-5">123 Main Street, City, Country</span>
+                </div>
+                <div class="card bg-dark text-light p-3 shadow-lg d-flex flex-row align-items-center">
+                    <i class="fas fa-envelope text-primary fs-3 me-3"></i>
+                    <span class="fw-bold fs-5">info@thexasony.com</span>
+                </div>
+            </div>
+
+            <!-- Right Side: Contact Form -->
+            <div class="contact-form bg-white p-4 rounded shadow">
+                <form>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="font-weight-bold">Name</label>
+                            <input type="text" class="form-control" placeholder="Enter your name" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="font-weight-bold">Email</label>
+                            <input type="email" class="form-control" placeholder="Enter your email" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="font-weight-bold">Country</label>
+                            <input type="text" class="form-control" placeholder="Enter your country" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="font-weight-bold">Phone</label>
+                            <input type="tel" class="form-control" placeholder="Enter your phone number" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="font-weight-bold">Scam Company Name</label>
+                            <input type="text" class="form-control" placeholder="Company Name" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="font-weight-bold">Amount Lost</label>
+                            <input type="number" class="form-control" placeholder="Enter amount" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="font-weight-bold">Payment Method</label>
+                            <select class="form-control">
+                                <option>Select Payment Method</option>
+                                <option>Credit Card</option>
+                                <option>Bank Transfer</option>
+                                <option>Crypto</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="font-weight-bold">Currency</label>
+                            <select class="form-control">
+                                <option>Select Currency</option>
+                                <option>USD</option>
+                                <option>EUR</option>
+                                <option>GBP</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="font-weight-bold">Last Transaction Date</label>
+                            <input type="date" class="form-control" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="font-weight-bold">Select Scam Type</label>
+                            <select class="form-control">
+                                <option>Investment Scam</option>
+                                <option>Online Fraud</option>
+                                <option>Phishing</option>
+                                <option>Ponzi Scheme</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="font-weight-bold">Message</label>
+                        <textarea class="form-control" rows="3" placeholder="Describe your case" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block text-uppercase py-3">Get Consultation</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $("#contactForm").on("submit", function(event) {
+            event.preventDefault();
+            let formData = $(this).serialize();
+            
+            $.ajax({
+                url: "contact.php", // Send data to `contact.php`
+                type: "POST",
+                data: formData,
+                dataType: "json",
+                success: function(response) {
+                    if (response.success) {
+                        $("#responseMessage").html('<span class="text-success">' + response.message + '</span>');
+                        $("#contactForm")[0].reset();
+                    } else {
+                        $("#responseMessage").html('<span class="text-danger">' + response.message + '</span>');
+                    }
+                },
+                error: function() {
+                    $("#responseMessage").html('<span class="text-danger">An error occurred. Please try again.</span>');
+                }
+            });
+        });
+    </script>
+
+
+    
+
+     <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/67e241f73d438e1907875044/1in5t3cg8';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
 
 
    
@@ -206,7 +357,7 @@
     <div class="row pt-5">
         <div class="col-lg-3 col-md-6 mb-5">
             <a href="index.html" class="navbar-brand">
-                <h1 class="m-0 mt-n2 text-white display-4">SAXONY</h1>
+                <h1 class="m-0 mt-n2 text-white display-4">THEXASONY</h1>
             </a>
             <!-- <p>Volup amet magna clita tempor. Tempor sea eos vero ipsum. Lorem lorem sit sed elitr sed kasd et</p>
             <h6 class="text-uppercase text-white py-2">Follow Us</h6>
@@ -274,6 +425,35 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    let formData = new FormData(this);
+
+    fetch("send_email.php", {
+        method: "POST",
+        body: formData
+    })
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("responseMessage").innerText = 
+            data === "success" ? "Message sent successfully!" : "Error sending message.";
+    })
+    .catch(error => {
+        document.getElementById("responseMessage").innerText = "Something went wrong.";
+    });
+});
+
+    </script>
+
 </body>
 
 </html>
